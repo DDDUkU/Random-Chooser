@@ -3,7 +3,7 @@
 import json
 import random
 import time
-from pathlib import Path
+from pathlib import Pathx
 import streamlit as st
 
 DATA_FILE = Path(__file__).parent / "chooser_lists.json"
@@ -34,7 +34,7 @@ st.markdown("""
     .main-header {
         text-align: center;
         padding: 20px;
-        background: linear-gradient(90deg, #E6A4C4, #B19CD9);
+        background: linear-gradient(90deg, #9B4D7C, #6B4D8A);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
         font-size: 3rem;
@@ -43,7 +43,7 @@ st.markdown("""
 
     .subtitle {
         text-align: center;
-        color: #9D8BB0;
+        color: #5C4668;
         font-style: italic;
         margin-bottom: 30px;
     }
@@ -58,8 +58,9 @@ st.markdown("""
     .stTabs [data-baseweb="tab"] {
         background-color: #FFE4EC;
         border-radius: 10px;
-        color: #6B5B7A;
+        color: #4A3055;
         padding: 10px 20px;
+        font-weight: 500;
     }
 
     .stTabs [aria-selected="true"] {
@@ -88,9 +89,10 @@ st.markdown("""
         border-radius: 20px;
         text-align: center;
         font-size: 2rem;
-        color: #6B5B7A;
+        color: #3D2B4A;
         border: 3px solid #E6A4C4;
         margin: 20px 0;
+        font-weight: 600;
     }
 
     .cute-image {
@@ -111,9 +113,10 @@ st.markdown("""
         border-radius: 20px;
         text-align: center;
         font-size: 1.8rem;
-        color: #6B5B7A;
+        color: #3D2B4A;
         border: 3px solid #B19CD9;
         margin: 20px 0;
+        font-weight: 600;
         animation: pulse 0.15s ease-in-out;
     }
 
@@ -123,9 +126,10 @@ st.markdown("""
         border-radius: 20px;
         text-align: center;
         font-size: 2rem;
-        color: #6B5B7A;
+        color: #3D2B4A;
         border: 3px solid #E6A4C4;
         margin: 20px 0;
+        font-weight: 700;
         animation: celebrate 0.5s ease-out;
     }
 
